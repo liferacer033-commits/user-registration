@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - UserAuth Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Firebase v8 CDN: ALWAYS put these before your code! -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyC5pgk-eTXn7-4nPF4Em29TlS1L7osJPdc",
+      authDomain: "apk-4d576.firebaseapp.com",
+      projectId: "apk-4d576",
+      storageBucket: "apk-4d576.appspot.com",
+      messagingSenderId: "411610834172",
+      appId: "1:411610834172:web:69818da9e4c7189ed9e379"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="container">
+      <h2>LOGIN</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="loginUsername">Email</label>
+          <input type="email" id="loginUsername" placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password">
+        </div>
+        <p id="loginError" class="error-text"></p>
+        <button type="submit">Login Now</button>
+      </form>
+      <p style="margin-top:18px;font-size:14px;">Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;margin-left:40px;">
+      <img src="assets/images/login-illustration.jpg" alt="Login Visual" style="max-width:300px;width:100%;border-radius:16px;box-shadow:0 2px 24px #aaa;">
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
