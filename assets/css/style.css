@@ -1,0 +1,198 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #edf1fa;
+  margin: 0;
+  min-height: 100vh;
+}
+.main-wrapper {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #edf1fa;
+}
+.container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(60,68,177,0.18);
+  padding: 40px 32px 32px 32px;
+  width: 350px;
+  margin: 25px;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+.container:hover {
+  box-shadow: 0 8px 40px rgba(60,68,177,0.32);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #301c6b;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.input-group {
+  margin-bottom: 16px;
+}
+label {
+  font-weight: 600;
+  color: #444b82;
+  margin-left: 3px;
+  font-size: 15px;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e1e2e6;
+  border-radius: 8px;
+  margin-top: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+input:focus {
+  border-color: #839ef7;
+  outline: none;
+}
+button {
+  background: linear-gradient(45deg, #6c56f6 0%, #3dc9b6 100%);
+  color: white;
+  width: 100%;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 17px;
+  transition: background 0.3s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #a2d6ff10;
+}
+button:hover {
+  background: linear-gradient(45deg, #4e44ab 0%, #2fdab8 100%);
+  box-shadow: 0 2px 20px #79d3d654;
+}
+.error-text {
+  color: #ff3838;
+  font-size: 15px;
+  margin: 10px 0 0 0;
+  min-height: 22px;
+}
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+.social-btn {
+  display: flex;
+  align-items: center;
+  background: #f5f6fa;
+  border: 1.5px solid #dedede;
+  border-radius: 8px;
+  color: #333;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow .2s, border-color 0.3s;
+  margin-bottom: 4px;
+  justify-content: center;
+  gap: 12px;
+}
+.social-btn img {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+.social-btn:hover {
+  box-shadow: 0 2px 8px #d1ffd4;
+  border-color: #3dc9b6;
+}
+a {
+  color: #301c6b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #3dc9b6;
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 18px 8px;
+    width: 98vw;
+    margin: 0;
+  }
+  .main-wrapper {
+    align-items: flex-start;
+  }
+}
+/* Portfolio */
+.portfolio-bg {
+  background: linear-gradient(135deg, #19eb2a 60%, #212121 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.omnitrix-circle {
+  background: #000000;
+  border: 5px solid #24ff43;
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 32px auto;
+  box-shadow: 0 0 40px #20fc37;
+  overflow: hidden;
+  position: relative;
+}
+.project-card {
+  background: #292c3cdd;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  padding: 24px;
+  color: #f0f0f0;
+  box-shadow: 0 2px 12px #2e2f2e25;
+}
+
+/* Ben 10 Gallery Custom Styles */
+.ben10-hero-gallery, .ben10-alien-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.ben10-hero-card, .ben10-alien-card {
+  background: #212d21bb;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #2ffc3725;
+  padding: 17px 17px 8px 17px;
+  width: 170px;
+  text-align: center;
+  transition: transform 0.13s;
+}
+.ben10-hero-card:hover, .ben10-alien-card:hover {
+  transform: scale(1.09);
+}
+.ben10-hero-card img, .ben10-alien-card img {
+  max-width: 100%;
+  height: 125px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #1f5f23;
+}
+.ben10-label {
+  color: #00ff65;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 7px;
+  letter-spacing: 1.5px;
+}
